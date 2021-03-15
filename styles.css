@@ -1,0 +1,75 @@
+:root {
+	--blue0: #000020;
+    --blue1: #192142;
+    --blue2: #7D7D95;
+    --white0: #FFFFFF;
+    --gold0: #FFB500;
+}
+
+body {
+    background-color: var(--blue1);
+    font-family: 'Courier New';
+    color: var(--white0);
+    image-rendering: pixelated;
+}
+
+hr {
+    background-color: var(--gold0);
+    height: 1px;
+    border: none;
+}
+
+#siteTitle {
+    text-align: center;
+    font-size: 26px;
+}
+
+#charsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.characterBox {
+    border: 1px solid var(--gold0);
+    width: 550px;
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.characterBox > img {
+    width: 144px;
+    height: 144px;
+}
+
+.download {
+    background: url("./ui/download.png");
+    border: none;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    align-self: flex-end;
+}
+
+.download:hover {
+    background: url("./ui/downloadhover.png");
+    cursor: pointer;
+}
+
+.characterInfo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+}
+
+.characterAuthor {
+    font-size: 18px;
+}
