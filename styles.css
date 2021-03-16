@@ -10,7 +10,8 @@ body {
     background-color: var(--blue1);
     font-family: 'Courier New';
     color: var(--white0);
-    image-rendering: pixelated;
+    image-rendering: pixelated; /* for good browsers */
+    image-rendering: crisp-edges; /* for firefox! :) */
 }
 
 hr {
