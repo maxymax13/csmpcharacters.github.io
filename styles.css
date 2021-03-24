@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: var(--blue1);
+    background-color: var(--blue0);
     font-family: 'Courier New';
     color: var(--white0);
     image-rendering: pixelated; /* for chrome! :) */
@@ -32,12 +32,13 @@ hr {
 }
 
 .characterBox {
-    border: 7px solid var(--gold0);
-    border-image: url("./ui/9slice.png") 7 space;
+    background-color: var(--blue1);
+    border: 14px solid var(--gold0);
+    border-image: url("./ui/9slice.png") 14 round;
     width: 550px;
     display: flex;
     align-items: flex-end;
-    margin: 10px;
+    margin: 4px;
     padding: 15px;
     position: relative;
 }
